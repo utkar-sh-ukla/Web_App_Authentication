@@ -2,10 +2,7 @@
   "name": "node-project",
   "version": "1.0.0",
   "description": "simple node project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/utkarsh314/Node-Project.git"
@@ -19,6 +16,14 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "joi": "^13.1.0",
     "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   }
 }
