@@ -1,8 +1,10 @@
 const express = require("express");
 
 const jwt = require("jsonwebtoken");
-const jwtPrivateKey = "FDaFdsFDafsFdasfFDSAsd";
+const dotenv = requie('dotenv');
+dotenv.config();
 
+const jwtPrivateKey = process.env.JWT_PRIVATE_KEY;
 const app = express();
 
 app.use(express.json());
